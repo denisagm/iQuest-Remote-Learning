@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iQuest Cook Book</title>
+    <link href="style.css" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+<body>
+<section class="header">
+    <div class="header-title">
+        <h2><i class="fas fa-utensils"></i> iQuest Cook Book</h2>
+    </div>
+    <div class="flex">
+        <button class="navigation new" type="button"><i class="fas fa-plus"></i> New recipe</button>
+        <div class="navigation">
+            <select>
+                <option value="">Select a recipe...</option>
+                <option value="eggs">Scrambled egg omelet</option>
+            </select>
+        </div>
+    </div>
+</section>
+<section class="main-content">
+    <article class="article">
+        <div class="title">
+            <h3><i class="fas fa-info"></i> About</h3>
+        </div>
+        <div class="content">
+            <div class="row">
+                <label>
+                    <div class="label">Recipe title</div>
+                    <input class="large-inputs" type="text" placeholder="Title">
+                </label>
+            </div>
+            <div class="row">
+                <label>
+                    <div class="label">Description</div>
+                    <textarea class="large-inputs" rows="5" cols="125" placeholder="About the recipe"></textarea>
+                </label>
+            </div>
+            <div class="row flex">
+                <div class="options portions">
+                    <label>Portions</label>
+                    <select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div class="options time">
+                    <label>Time(mins)</label>
+                    <select>
+                        <option value="5m">5</option>
+                        <option value="10m">10</option>
+                        <option value="15m">15</option>
+                        <option value="20m">20</option>
+                        <option value="30m">30</option>
+                        <option value="45m">45</option>
+                        <option value="60m">60</option>
+                        <option value="90m">90</option>
+                        <option value="120m">120</option>
+                    </select>
+                </div>
+                <div class="options difficulty">
+                    <label>Difficulty</label>
+                    <select>
+                        <option value="d1">1</option>
+                        <option value="d2">2</option>
+                        <option value="d3">3</option>
+                        <option value="d4">4</option>
+                        <option value="d5">5</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article class="article">
+        <div class="title">
+            <h3><i class="fas fa-list"></i> Ingredients</h3>
+        </div>
+        <div class="content">
+            <div class="row">
+                <ul>
+                    <li>300 g brown rice</li>
+                    <li>2 pc red onions</li>
+                    <li>1 pc fresh red chilli</li>
+                    <li>25 g unsalted butter</li>
+                    <li>6 pc large free-range eggs</li>
+                </ul>
+            </div>
+            <form action="#">
+                <div class="row flex">
+                    <div class="flex-inputs qty">
+                        <input type="number" placeholder="Qty.">
+                    </div>
+                    <div class="flex-inputs unit">
+                        <select>
+                            <option value="unit">Unit</option>
+                            <option value="grams">g</option>
+                            <option value="kgrams">Kg</option>
+                            <option value="piece">pc</option>
+                            <option value="ml">ml</option>
+                            <option value="liter">l</option>
+                            <option value="teaspoon">tea spoon(s)</option>
+                        </select>
+                    </div>
+                    <div class="flex-inputs of">
+                        <span>of</span>
+                    </div>
+                    <div class="flex-inputs ingredient">
+                        <input type="text" placeholder="Ingredient">
+                    </div>
+                    <div class="flex-inputs add">
+                        <button type="submit"><i class="fas fa-plus-square"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </article>
+    <article class="article">
+        <div class="title">
+            <h3><i class="fas fa-list-ol"></i> Steps</h3>
+        </div>
+        <div class="content">
+            <div class="row">
+                <ol>
+                    <li>Cook the rice in a pan of boiling salted water according to the packet instructions, then drain and refresh under cold water, leaving it in the colander.</li>
+                    <li>At the same time, poach the fish in a large pan of simmering salted water on a medium heat for 10 minutes, then carefully remove with a slotted spoon. Turn the heat up under the poaching water and bring back to a good simmer.</li>
+                    <li>Meanwhile, peel the onions and finely slice with the red chilli (deseed if you like) and coriander stalks. Peel and finely chop the garlic and ginger. Place it all in a large frying pan on a medium heat with 1 tablespoon of oil and the butter, and cook for 10 minutes, or until soft but not coloured, stirring occasionally.</li>
+                </ol>
+            </div>
+            <form action="#">
+                <div class="row">
+                    <label>
+                        <div class="label">Step</div>
+                        <textarea class="large-inputs" rows="5" cols="125" placeholder="Step description"></textarea>
+                    </label>
+                </div>
+                <div class="row">
+                    <button class="add-step" type="submit"><i class="fas fa-plus-square"></i> Add step</button>
+                </div>
+            </form>
+        </div>
+    </article>
+    <div class="row flex">
+        <button class="button cancel" type="button"><i class="fas fa-trash-alt"></i> Cancel</button>
+        <button class="button save" type="button"><i class="fas fa-save"></i> Save recipe</button>
+    </div>
+</section>
+</body>
+</html>

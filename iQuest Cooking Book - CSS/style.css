@@ -1,0 +1,248 @@
+body {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.8em;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.header-title {
+    background-color: #d94e44;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+h2, h3 {
+    margin: 0;
+}
+
+.navigation {
+    background-color: white;
+    border: none;
+    border-left: 1px solid #d6d4d4;
+    border-bottom: 1px solid #d6d4d4;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.navigation.new {
+    color: #db4d3f;
+}
+
+select {
+    background-color: white;
+    border: 1px solid #eeecec;
+    border-radius: 2px;
+    padding: 7px;
+    font-weight: bold;
+}
+
+.main-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.article {
+    margin-bottom: 20px;
+}
+
+.title {
+    background-color: #d94e44;
+    color: white;
+    padding: 5px;
+}
+
+.content {
+    background-color: #f6f4f4;
+    padding: 20px 20px 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.options {
+    width: 33.33%;
+    font-weight: bold;
+}
+
+.portions {
+    text-align: left;
+}
+
+.time {
+    text-align: center;
+}
+
+.difficulty {
+    text-align: right;
+}
+
+.label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.row {
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.large-inputs {
+    min-width: 50%;
+    width: 100%;
+    max-width: 100%;
+    border: none;
+    border-radius: 2px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li:before {
+    content: '';
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    background: url("sageti.png") no-repeat;
+    background-size: 12px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+ol li {
+    padding-bottom: 5px;
+}
+
+.flex-inputs:not(.add) {
+    padding-right: 10px;
+}
+
+.qty {
+    width: 25%;
+    text-align: left;
+}
+
+.qty input {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #eeecec;
+    border-radius: 2px;
+    padding: 3px 3px 3px 10px;
+    box-sizing: border-box;
+}
+
+.unit {
+    width: 25%;
+    text-align: right;
+}
+
+.unit select {
+    width: 100%;
+}
+
+.of {
+    display: none;
+}
+
+.ingredient {
+    width: 45%;
+    text-align: left;
+}
+
+.ingredient input {
+    background-color: white;
+    border: 1px solid #eeecec;
+    border-radius: 2px;
+    padding: 3px 3px 3px 10px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+.add {
+    width: 5%;
+    text-align: right;
+}
+
+.add button {
+    background-color: white;
+    border: 1px solid #db4d3f;
+    border-radius: 2px;
+    color: #db4d3f;
+    vertical-align: middle;
+    height: 100%;
+    padding-top: 3px;
+}
+
+.add-step {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #db4d3f;
+    border-radius: 2px;
+    color: #db4d3f;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.button {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #db4d3f;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+.button.cancel {
+    background-color: white;
+    color: #db4d3f;
+}
+
+.button.save {
+    background-color: #db4d3f;
+    color: white;
+}
+
+@media only screen and (min-width: 640px) {
+    .qty {
+        width: 16.7%;
+    }
+
+    .qty input {
+        width: 50%;
+    }
+
+    .unit {
+        width: 16.7%;
+    }
+
+    .of {
+        display: block;
+        padding-top: 7px;
+        width: 16.6%;
+        text-align: center;
+    }
+
+    .ingredient {
+        width: 40%;
+    }
+
+    .add {
+        width: 10%;
+    }
+}
