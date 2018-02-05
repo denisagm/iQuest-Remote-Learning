@@ -12,12 +12,16 @@
         <h2><i class="fas fa-utensils"></i> iQuest Cook Book</h2>
     </div>
     <div class="flex">
-        <button class="navigation new" type="button"><i class="fas fa-plus"></i> New recipe</button>
-        <div class="navigation">
-            <select>
-                <option value="">Select a recipe...</option>
-                <option value="eggs">Scrambled egg omelet</option>
-            </select>
+        <div class="flex-item">
+            <button class="navigation new" type="button"><i class="fas fa-plus"></i> New recipe</button>
+        </div>
+        <div class="flex-item">
+            <div class="navigation">
+                <select>
+                    <option value="">Select a recipe...</option>
+                    <option value="eggs">Scrambled egg omelet</option>
+                 </select>
+            </div>
         </div>
     </div>
 </section>
@@ -27,59 +31,61 @@
             <h3><i class="fas fa-info"></i> About</h3>
         </div>
         <div class="content">
-            <div class="row">
-                <label>
-                    <div class="label">Recipe title</div>
-                    <input class="large-inputs" type="text" placeholder="Title">
-                </label>
-            </div>
-            <div class="row">
-                <label>
-                    <div class="label">Description</div>
-                    <textarea class="large-inputs" rows="5" cols="125" placeholder="About the recipe"></textarea>
-                </label>
-            </div>
-            <div class="row flex">
-                <div class="options portions">
-                    <label>Portions</label>
-                    <select>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </select>
+            <form action="#">
+                <div class="row">
+                    <label>
+                        <div class="label">Recipe title</div>
+                        <input class="large-inputs" type="text" placeholder="Title">
+                    </label>
                 </div>
-                <div class="options time">
-                    <label>Time(mins)</label>
-                    <select>
-                        <option value="5m">5</option>
-                        <option value="10m">10</option>
-                        <option value="15m">15</option>
-                        <option value="20m">20</option>
-                        <option value="30m">30</option>
-                        <option value="45m">45</option>
-                        <option value="60m">60</option>
-                        <option value="90m">90</option>
-                        <option value="120m">120</option>
-                    </select>
+                <div class="row">
+                    <label>
+                        <div class="label">Description</div>
+                        <textarea class="large-inputs" rows="8" cols="125" placeholder="About the recipe"></textarea>
+                    </label>
                 </div>
-                <div class="options difficulty">
-                    <label>Difficulty</label>
-                    <select>
-                        <option value="d1">1</option>
-                        <option value="d2">2</option>
-                        <option value="d3">3</option>
-                        <option value="d4">4</option>
-                        <option value="d5">5</option>
-                    </select>
+                <div class="row flex">
+                    <div class="options portions">
+                        <label>Portions</label>
+                        <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    <div class="options time">
+                        <label>Time(mins)</label>
+                        <select>
+                            <option value="5m">5</option>
+                            <option value="10m">10</option>
+                            <option value="15m">15</option>
+                            <option value="20m">20</option>
+                            <option value="30m">30</option>
+                            <option value="45m">45</option>
+                            <option value="60m">60</option>
+                            <option value="90m">90</option>
+                            <option value="120m">120</option>
+                        </select>
+                    </div>
+                    <div class="options difficulty">
+                        <label>Difficulty</label>
+                        <select>
+                            <option value="d1">1</option>
+                            <option value="d2">2</option>
+                            <option value="d3">3</option>
+                            <option value="d4">4</option>
+                            <option value="d5">5</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
+            </form>
         </div>
     </article>
     <article class="article">
@@ -141,7 +147,7 @@
                 <div class="row">
                     <label>
                         <div class="label">Step</div>
-                        <textarea class="large-inputs" rows="5" cols="125" placeholder="Step description"></textarea>
+                        <textarea class="large-inputs" rows="8" cols="125" placeholder="Step description"></textarea>
                     </label>
                 </div>
                 <div class="row">
@@ -151,8 +157,12 @@
         </div>
     </article>
     <div class="row flex">
-        <button class="button cancel" type="button"><i class="fas fa-trash-alt"></i> Cancel</button>
-        <button class="button save" type="button"><i class="fas fa-save"></i> Save recipe</button>
+        <div class="flex-item">
+            <button class="button cancel" type="button"><i class="fas fa-trash-alt"></i> Cancel</button>
+        </div>
+        <div class="flex-item">
+            <button class="button save" type="button"><i class="fas fa-save"></i> Save recipe</button>
+        </div>
     </div>
 </section>
 </body>

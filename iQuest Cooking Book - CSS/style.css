@@ -16,6 +16,10 @@ body {
     padding: 10px;
 }
 
+.header-title h2 {
+    font-size: 2em;
+}
+
 h2, h3 {
     margin: 0;
 }
@@ -25,22 +29,49 @@ h2, h3 {
     border: none;
     border-left: 1px solid #d6d4d4;
     border-bottom: 1px solid #d6d4d4;
-    width: 50%;
     text-align: center;
-    padding: 10px;
-    font-weight: bold;
+    padding: 14px;
+    font-size: 1.4em;
+    vertical-align: middle;
 }
 
 .navigation.new {
     color: #db4d3f;
+    height: 100%;
+    width: 100%;
+    padding: 22px;
 }
 
 select {
     background-color: white;
     border: 1px solid #eeecec;
     border-radius: 2px;
-    padding: 7px;
-    font-weight: bold;
+    padding: 8px;
+    font-size: 0.9em;
+    line-height: 1.75em;
+}
+
+
+input {
+    line-height: 1.75em;
+}
+
+/*button:focus {*/
+    /*outline: none;*/
+/*}*/
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.3em;
+    /*font-weight: bold;*/
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.3em;
+    /*font-weight: bold;*/
 }
 
 .main-content {
@@ -55,7 +86,12 @@ select {
 .title {
     background-color: #d94e44;
     color: white;
-    padding: 5px;
+    padding: 8px 8px 8px 15px;
+}
+
+.title h3 {
+    font-size: 1.4em;
+    font-weight: normal;
 }
 
 .content {
@@ -65,11 +101,19 @@ select {
 
 .flex {
     display: flex;
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
+}
+
+.flex-item {
+    width: 50%;
 }
 
 .options {
     width: 33.33%;
-    font-weight: bold;
+    font-size: 1.2em;
 }
 
 .portions {
@@ -85,7 +129,8 @@ select {
 }
 
 .label {
-    font-weight: bold;
+    display: block;
+    font-size: 1.3em;
     margin-bottom: 10px;
 }
 
@@ -109,14 +154,13 @@ ul {
 }
 
 ul li:before {
-    content: '';
+    content: '\00bb';
     display: inline-block;
-    height: 12px;
-    width: 12px;
-    background: url("sageti.png") no-repeat;
-    background-size: 12px;
-    margin-right: 5px;
-    vertical-align: middle;
+    color: #db4d3f;
+    font-weight: bold;
+    font-size: 1.3em;
+    line-height: 0.8em;
+    padding-right: 4px;
 }
 
 ol {
@@ -125,6 +169,10 @@ ol {
 
 ol li {
     padding-bottom: 5px;
+}
+
+li {
+    font-size: 1.2em;
 }
 
 .flex-inputs:not(.add) {
@@ -152,15 +200,19 @@ ol li {
 }
 
 .unit select {
+    height: 100%;
     width: 100%;
+    font-size: 1.2em;
 }
 
 .of {
     display: none;
+    padding-top: 7px;
+    text-align: center;
 }
 
 .ingredient {
-    width: 45%;
+    width: 40%;
     text-align: left;
 }
 
@@ -184,9 +236,10 @@ ol li {
     border: 1px solid #db4d3f;
     border-radius: 2px;
     color: #db4d3f;
-    vertical-align: middle;
     height: 100%;
+    line-height: 1.75em;
     padding-top: 3px;
+    vertical-align: middle;
 }
 
 .add-step {
@@ -197,15 +250,15 @@ ol li {
     border-radius: 2px;
     color: #db4d3f;
     padding: 10px;
-    font-weight: bold;
+    font-size: 1.4em;
 }
 
 .button {
-    width: 50%;
+    width: 100%;
     padding: 10px;
     border: 1px solid #db4d3f;
     border-radius: 2px;
-    font-weight: bold;
+    font-size: 1.4em;
 }
 
 .button.cancel {
@@ -220,7 +273,7 @@ ol li {
 
 @media only screen and (min-width: 640px) {
     .qty {
-        width: 16.7%;
+        width: 15%;
     }
 
     .qty input {
@@ -228,14 +281,12 @@ ol li {
     }
 
     .unit {
-        width: 16.7%;
+        width: 15%;
     }
 
     .of {
         display: block;
-        padding-top: 7px;
-        width: 16.6%;
-        text-align: center;
+        width: 15%;
     }
 
     .ingredient {
